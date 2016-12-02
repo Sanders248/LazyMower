@@ -2,12 +2,8 @@ package com.example.alex.lazymowing;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
-
-import java.io.IOException;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 

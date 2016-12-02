@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.alex.lazymowing.MainActivity">
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageButton
+        android:id="@+id/imCenter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/turn_left"
-        android:id="@+id/imTurnLeft"
-        android:layout_marginEnd="22dp"
-        android:layout_below="@+id/imMoveForward"
-        android:layout_toStartOf="@+id/imMoveBack"
-        android:layout_marginTop="33dp" />
+        app:srcCompat="@drawable/im_mower"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/turn_right"
-        android:id="@+id/imTurnRight"
-        android:layout_marginEnd="18dp"
-        android:layout_alignTop="@+id/imTurnLeft"
-        android:layout_alignParentEnd="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/move_back"
-        android:layout_marginTop="19dp"
-        android:id="@+id/imMoveBack"
-        android:layout_below="@+id/imTurnLeft"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/move_forward"
-        android:layout_marginTop="68dp"
         android:id="@+id/imMoveForward"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imMoveBack" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/im_move_forward"
+        android:layout_above="@+id/imCenter"
+        android:layout_alignStart="@+id/imCenter"/>
+
+    <ImageButton
+        android:id="@+id/imTurnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/im_turn_right"
+        android:layout_toEndOf="@+id/imCenter"
+        android:layout_alignBottom="@id/imCenter"/>
+
+    <ImageButton
+        android:id="@+id/imMoveBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/im_move_back"
+        android:layout_below="@+id/imCenter"
+        android:layout_alignStart="@+id/imCenter" />
+
+    <ImageButton
+        android:id="@+id/imTurnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/im_turn_left"
+        android:layout_toStartOf="@+id/imCenter"
+        android:layout_alignBottom="@id/imCenter"/>
+
 </RelativeLayout>

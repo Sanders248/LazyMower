@@ -3,12 +3,12 @@ Android App and Service to simulate a remote control of a mower with a phone or 
 
 
 AndroidApp:
-	Application Android contenant 4 boutons permettant d’exécuter les actions suivantes: Avancer, reculer, tourner à droite et tourner à gauche.
-	Ensuite l'API web est appelé avec l'identifiant de l'application(définit aléatoirement) ainsi qu'avec l'action demandé.
+	Android App with 4 buttons which allow to launch some actions: go ahead, go back, turn right or turn left.
+	Then, the web API is called with the id of the app (randomly defined for now) and with the requiered action.
 
 	
 APIMower
-	Service REST avec JAX-RS (JAVA 1.7) sur un serveur Glassfish (4.1.1) (lancé avec Netbeans)
-    Celui-ci créera des logs (à l'emplacement indiqué dans le code source) dès qu'un appel sera effectué sur le bon chemin.
+	REST Service with JAX-RS (JAVA 1.7) on a Glassfish serveur (version 4.1.1) (launched with Netbeans)
+	This one will create logs every time a called is made on the good path.
 
 
