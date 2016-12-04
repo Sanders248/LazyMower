@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Server URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textViewURL"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textViewPort"
+        android:layout_alignEnd="@+id/editTextURL"
+        android:id="@+id/editTextPort"
+        android:text="8080" />
+
+    <Button
+        android:text="Try connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonChangeSet"
+        android:layout_alignStart="@+id/buttonChangeSet"
+        android:layout_marginTop="13dp"
+        android:id="@+id/buttonTryCo"
+        android:layout_alignEnd="@+id/buttonChangeSet" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:text="localhost"
+        android:ems="10"
+        android:id="@+id/editTextURL"
+        android:layout_below="@+id/textViewURL"
+        android:layout_alignStart="@+id/textViewURL" />
+
+    <TextView
+        android:text="Server Port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textViewPort"
+        android:layout_below="@+id/editTextURL"
+        android:layout_alignStart="@+id/editTextURL" />
+
+    <Button
+        android:text="Change settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonChangeSet"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+</RelativeLayout>

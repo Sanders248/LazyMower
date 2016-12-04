@@ -53,6 +53,14 @@ public class ApiMower {
             e.printStackTrace();  
         }  
     }
+    
+    @GET
+    @Produces("application/xml")
+    public Response testConnection() {
+        return Response
+            .status(Status.OK)
+            .build();
+    }
 
     @GET
     @Path("{id}/{action}")
